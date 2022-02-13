@@ -14,6 +14,7 @@ describe('ID3 Decision Tree Basics', function() {
   it('should train on the dataset', function() {
     dt.train(SAMPLE_DATASET.data);
     assert.ok(dt.toJSON());
+    console.log(dt.getStepsLog());
   });
 
   it('should predict on a sample instance', function() {
